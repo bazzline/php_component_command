@@ -40,10 +40,12 @@ Take a look on [ohloh.net](https://www.ohloh.net/p/php_component_command).
 * implement some stuff from [system process](https://github.com/jakobwesthoff/systemProcess) with a general aproach in mind
 * no unit tests so far
 
+<!--
 # API
 
 @todo
 Thanks to [apigen](https://github.com/apigen/apigen), the api is available in the [document](https://github.com/bazzline/php_component_code_generator/blob/master/document/index.html) section or [online](http://code.bazzline.net/).
+-->
 
 # History
 
