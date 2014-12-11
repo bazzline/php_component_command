@@ -73,7 +73,10 @@ $zip = new Zip();
 $pathToZipArchive = '/tmp/my.zip';
 
 echo 'list archive content' . PHP_EOL;
-echo var_export($zip->listcontent($pathToZipArchive), true) . PHP_EOL;
+$lines = $zip->listContent($pathToZipArchive);
+foreach ($lines as $line) {
+    echo $line . PHP_EOL;
+}
 
 echo 'unzip archive' . PHP_EOL;
 $zip->unzip($pathToZipArchive, '/tmp/my_directory');
