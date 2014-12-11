@@ -15,18 +15,11 @@ use PHPUnit_Framework_TestCase;
  */
 class CommandTest extends PHPUnit_Framework_TestCase
 {
-    /** @var string */
-    private $pathToBash = '/usr/bin/bash';
-
     //begin of test
     public function testEnvironment()
     {
         $isWindowsOs = (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN');
         $this->assertFalse($isWindowsOs, 'test only work on unix systems');
-
-        //results in an error "not within the allowed paths"
-        //$isValidBashPath = (is_file($this->pathToBash) && is_executable($this->pathToBash));
-        //$this->assertTrue($isValidBashPath, '"' . $this->pathToBash . '" is not a file or not executable');
     }
 
     /**
