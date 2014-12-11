@@ -47,5 +47,6 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 
 * [1.0.1](https://github.com/bazzline/php_component_command/tree/1.0.1) - not yet released
     * add unit tests
+    * removed @todos
 * [1.0.0](https://github.com/bazzline/php_component_command/tree/1.0.0) - released at 11-12-2014
     * initial release
