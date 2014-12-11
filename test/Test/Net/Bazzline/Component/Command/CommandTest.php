@@ -35,7 +35,7 @@ class CommandTest extends PHPUnit_Framework_TestCase
     public function testRunningCommand()
     {
         $class = $this->getNewCommand();
-        $command = $this->pathToBash . ' ' . __DIR__ . '/../../../../../resources/running_command.sh';
+        $command = 'php ' . __DIR__ . '/../../../../../resources/running_command.php';
 
         $class->execute($command);
     }
@@ -46,7 +46,7 @@ class CommandTest extends PHPUnit_Framework_TestCase
     public function testRunningCommandOutputLines()
     {
         $class = $this->getNewCommand();
-        $command = $this->pathToBash . ' ' . __DIR__ . '/../../../../../resources/running_command.sh';
+        $command = 'php ' . __DIR__ . '/../../../../../resources/running_command.php';
         $expectedLines = array(date('Y-m-d'));
 
         $lines = $class->execute($command);
@@ -62,7 +62,7 @@ class CommandTest extends PHPUnit_Framework_TestCase
     public function testFailingCommand()
     {
         $class = $this->getNewCommand();
-        $command = $this->pathToBash . ' ' . __DIR__ . '/../../../../../resources/failing_command.sh';
+        $command = 'php ' . __DIR__ . '/../../../../../resources/failing_command.php';
         $expectedLines = array(date('Y-m-d'));
 
         $lines = $class->execute($command);
