@@ -37,8 +37,9 @@ Take a look on [ohloh.net](https://www.ohloh.net/p/php_component_command).
 
 # Optimization Potential
 
-* implement some stuff from [system process](https://github.com/jakobwesthoff/systemProcess) with a general aproach in mind
-* no unit tests so far
+* implement some stuff from [system process](https://github.com/jakobwesthoff/systemProcess) with a general approach in mind
+* get inspired by [ShellCommand](https://github.com/apinstein/ShellCommand/blob/master/src/ShellCommand/ShellCommand.php)
+* implement input validation
 
 <!--
 # API
