@@ -2,6 +2,7 @@
 
 This project aims to deliver a easy to use php command component.
 
+{>>
 The build status of the current master branch is tracked by Travis CI:
 [![Build Status](https://travis-ci.org/bazzline/php_component_command.png?branch=master)](http://travis-ci.org/bazzline/php_component_command)
 [![Latest stable](https://img.shields.io/packagist/v/net_bazzline/php_component_command.svg)](https://packagist.org/packages/net_bazzline/php_component_command)
@@ -14,6 +15,7 @@ The versioneye status is:
 [![Dependency Status](https://www.versioneye.com/user/projects/54036dbbeab62ac615000143/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54036dbbeab62ac615000143)
 
 Take a look on [ohloh.net](https://www.ohloh.net/p/php_component_command).
+<<}
 
 # Install
 
