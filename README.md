@@ -66,20 +66,20 @@ class Zip extends Command
 
         return $this->execute($command);
     }
-
-    $zip = new Zip();
-    
-    $pathToZipArchive = '/tmp/my.zip';
-    
-    echo 'list archive content' . PHP_EOL;
-    echo var_export($zip->listcontent($pathToZipArchive), true) . PHP_EOL;
-    
-    echo 'unzip archive' . PHP_EOL;
-    $zip->unzip($pathToZipArchive, '/tmp/my_directory');
-    
-    echo 'zip directory' . PHP_EOL;
-    $zip->zip($pathToZipArchive, array('/tmp/my_directory'));
 }
+
+$zip = new Zip();
+
+$pathToZipArchive = '/tmp/my.zip';
+
+echo 'list archive content' . PHP_EOL;
+echo var_export($zip->listcontent($pathToZipArchive), true) . PHP_EOL;
+
+echo 'unzip archive' . PHP_EOL;
+$zip->unzip($pathToZipArchive, '/tmp/my_directory');
+
+echo 'zip directory' . PHP_EOL;
+$zip->zip($pathToZipArchive, array('/tmp/my_directory'));
 ```
 
 # Install
