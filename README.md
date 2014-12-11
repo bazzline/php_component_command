@@ -20,7 +20,7 @@ Take a look on [ohloh.net](https://www.ohloh.net/p/php_component_command).
 # Usage / Example
 
 ```php
-class ZipCommand extends Command
+class Zip extends Command
 {
     /** 
      * @param string $archiveName
@@ -34,7 +34,7 @@ class ZipCommand extends Command
         $command = '/usr/bin/zip -r ' . $archiveName . ' ' . implode(' ' , $items);
 
         return $this->execute($command);
-    }   
+    }
 
     /** 
      * @param string $pathToArchive
@@ -52,7 +52,7 @@ class ZipCommand extends Command
         }
 
         return $this->execute($command);
-    }   
+    }
 
     /** 
      * @param string $pathToArchive
@@ -65,7 +65,20 @@ class ZipCommand extends Command
         $command = '/usr/bin/unzip -l ' . $pathToArchive;
 
         return $this->execute($command);
-    }   
+    }
+
+    $zip = new Zip();
+    
+    $pathToZipArchive = '/tmp/my.zip';
+    
+    echo 'list archive content' . PHP_EOL;
+    echo var_export($zip->listcontent($pathToZipArchive), true) . PHP_EOL;
+    
+    echo 'unzip archive' . PHP_EOL;
+    $zip->unzip($pathToZipArchive, '/tmp/my_directory');
+    
+    echo 'zip directory' . PHP_EOL;
+    $zip->zip($pathToZipArchive, array('/tmp/my_directory'));
 }
 ```
 
