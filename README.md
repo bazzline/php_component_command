@@ -17,6 +17,58 @@ The versioneye status is:
 Take a look on [ohloh.net](https://www.ohloh.net/p/php_component_command).
 -->
 
+# Usage / Example
+
+```php
+class ZipCommand extends Command
+{
+    /** 
+     * @param string $archiveName
+     * @param array $items
+     * @return array
+     * @throws RuntimeException
+     * @todo implement parameter validation
+     */
+    public function zip($archiveName, array $items)
+    {   
+        $command = '/usr/bin/zip -r ' . $archiveName . ' ' . implode(' ' , $items);
+
+        return $this->execute($command);
+    }   
+
+    /** 
+     * @param string $pathToArchive
+     * @param null|string $outputPath
+     * @return array
+     * @throws RuntimeException
+     * @todo implement parameter validation
+     */
+    public function unzip($pathToArchive, $outputPath = null)
+    {   
+        if (!is_null($outputPath)) {
+            $command = '/usr/bin/unzip ' . $pathToArchive . ' -d ' . $outputPath;
+        } else {
+            $command = '/usr/bin/unzip ' . $pathToArchive;
+        }
+
+        return $this->execute($command);
+    }   
+
+    /** 
+     * @param string $pathToArchive
+     * @return array
+     * @throws RuntimeException
+     * @todo implement parameter validation
+     */
+    public function listContent($pathToArchive)
+    {   
+        $command = '/usr/bin/unzip -l ' . $pathToArchive;
+
+        return $this->execute($command);
+    }   
+}
+```
+
 # Install
 
 ## By Hand
@@ -53,6 +105,6 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 * [1.0.1](https://github.com/bazzline/php_component_command/tree/1.0.1) - not yet released
     * add unit tests
     * removed @todos
-    * add [examples](https://github.com/stevleibelt/examples/blob/master/php/pdf/soffice/ZipCommand.php)
+    * add usage / example in readme
 * [1.0.0](https://github.com/bazzline/php_component_command/tree/1.0.0) - released at 11-12-2014
     * initial release
