@@ -13,10 +13,10 @@ if ($isWindows) {
 }
 require_once __DIR__ . '/../../../vendor/autoload.php';
 
-$command = new \Example\ls\LS();
-$path = realpath(__DIR__ . '/../');
+$command = new \Example\rm\RM();
+$path = __DIR__ . '/foo';
 
-$lines = $command->ls($path);
+$lines = $command->rm($path);
 
 foreach ($lines as $line) {
     echo $line . PHP_EOL;

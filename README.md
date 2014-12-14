@@ -12,11 +12,9 @@ The scrutinizer status are:
 The versioneye status is:
 [![Dependency Status](https://www.versioneye.com/user/projects/548dee2a6e88f4ce4e0001ee/badge.svg?style=flat)](https://www.versioneye.com/user/projects/548dee2a6e88f4ce4e0001ee)
 
-<!--
-Take a look on [ohloh.net](https://www.ohloh.net/p/php_component_command).
--->
+Take a look on [openhub.net](https://www.openhub.net/p/php_component_command).
 
-# Usage / Example
+# Usage / [examples](https://github.com/bazzline/php_component_command/tree/master/example/Example)
 
 ```php
 class Zip extends Command
@@ -84,6 +82,14 @@ echo 'zip directory' . PHP_EOL;
 $zip->zip($pathToZipArchive, array('/tmp/my_directory'));
 ```
 
+There are also more [examples](https://github.com/bazzline/php_component_command/tree/master/example/Example) shipped with this project.
+
+* [cp](https://github.com/bazzline/php_component_command/tree/master/example/Example/cp/)
+* [ls](https://github.com/bazzline/php_component_command/tree/master/example/Example/ls/)
+* [mv](https://github.com/bazzline/php_component_command/tree/master/example/Example/mv/)
+* [rm](https://github.com/bazzline/php_component_command/tree/master/example/Example/rm/)
+* [ps](https://github.com/bazzline/php_component_command/tree/master/example/Example/ps/)
+
 # Install
 
 ## By Hand
@@ -114,10 +120,12 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 
 # History
 
+* [1.0.3](https://github.com/bazzline/php_component_command/tree/1.0.3) - not yet released
+    * implement linux/unix commands (not as example but as ready to use)
 * [1.0.2](https://github.com/bazzline/php_component_command/tree/1.0.2) - not yet released
     * removed @todos
     * added api
-    * add example as php scripts
+    * added [example](https://github.com/bazzline/php_component_command/tree/master/example/Example/) as php scripts
 * [1.0.1](https://github.com/bazzline/php_component_command/tree/1.0.1) - released at 12-12-2014
     * add unit tests
     * add usage / example in readme

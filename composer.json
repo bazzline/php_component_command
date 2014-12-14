@@ -24,6 +24,7 @@
     },
     "autoload": {
         "psr-0": {
+            "Example": "example",
             "Net\\Bazzline\\Component\\Command": "source/",
             "Test\\Net\\Bazzline\\Component\\Command": "test/"
         }

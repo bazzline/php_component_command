@@ -22,3 +22,5 @@ $lines = $command->mv($source, $destination);
 foreach ($lines as $line) {
     echo $line . PHP_EOL;
 }
+
+echo 'moved "' . $source . '" to "' . $destination . '"' . PHP_EOL;
