@@ -7,7 +7,7 @@ The build status of the current master branch is tracked by Travis CI:
 [![Latest stable](https://img.shields.io/packagist/v/net_bazzline/php_component_command.svg)](https://packagist.org/packages/net_bazzline/php_component_command)
 
 The scrutinizer status are:
-[![code quality](https://scrutinizer-ci.com/g/bazzline/php_component_command/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_command/) | [![code coverage](https://scrutinizer-ci.com/g/bazzline/php_component_command/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_command/) | [![build status](https://scrutinizer-ci.com/g/bazzline/php_component_command/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_command/)
+[![code quality](https://scrutinizer-ci.com/g/bazzline/php_component_command/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_command/) | [![build status](https://scrutinizer-ci.com/g/bazzline/php_component_command/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_command/)
 
 The versioneye status is:
 [![Dependency Status](https://www.versioneye.com/user/projects/548dee2a6e88f4ce4e0001ee/badge.svg?style=flat)](https://www.versioneye.com/user/projects/548dee2a6e88f4ce4e0001ee)
@@ -114,10 +114,12 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 
 # History
 
-* [1.0.1](https://github.com/bazzline/php_component_command/tree/1.0.1) - not yet released
-    * add unit tests
-    * added api
+* [1.0.2](https://github.com/bazzline/php_component_command/tree/1.0.2) - not yet released
     * removed @todos
+    * added api
+    * add example as php scripts
+* [1.0.1](https://github.com/bazzline/php_component_command/tree/1.0.1) - released at 12-12-2014
+    * add unit tests
     * add usage / example in readme
 * [1.0.0](https://github.com/bazzline/php_component_command/tree/1.0.0) - released at 11-12-2014
     * initial release
