@@ -122,7 +122,7 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 
 * [1.0.3](https://github.com/bazzline/php_component_command/tree/1.0.3) - not yet released
     * implement linux/unix commands (not as example but as ready to use)
-* [1.0.2](https://github.com/bazzline/php_component_command/tree/1.0.2) - not yet released
+* [1.0.2](https://github.com/bazzline/php_component_command/tree/1.0.2) - released at 14-12-2014
     * removed @todos
     * added api
     * added [example](https://github.com/bazzline/php_component_command/tree/master/example/Example/) as php scripts
