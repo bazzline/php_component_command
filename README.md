@@ -108,17 +108,15 @@ $zip->zip($pathToZipArchive, array('/tmp/my_directory'));
 * get inspired by [ShellCommand](https://github.com/apinstein/ShellCommand/blob/master/src/ShellCommand/ShellCommand.php)
 * implement input validation
 
-<!--
 # API
 
-@todo
-Thanks to [apigen](https://github.com/apigen/apigen), the api is available in the [document](https://github.com/bazzline/php_component_code_generator/blob/master/document/index.html) section or [online](http://code.bazzline.net/).
--->
+Thanks to [apigen](https://github.com/apigen/apigen), the api is available in the [document](https://github.com/bazzline/php_component_command/blob/master/document/index.html) section or [online](http://code.bazzline.net/).
 
 # History
 
 * [1.0.1](https://github.com/bazzline/php_component_command/tree/1.0.1) - not yet released
     * add unit tests
+    * added api
     * removed @todos
     * add usage / example in readme
 * [1.0.0](https://github.com/bazzline/php_component_command/tree/1.0.0) - released at 11-12-2014
