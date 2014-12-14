@@ -9,11 +9,10 @@ The build status of the current master branch is tracked by Travis CI:
 The scrutinizer status are:
 [![code quality](https://scrutinizer-ci.com/g/bazzline/php_component_command/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_command/) | [![code coverage](https://scrutinizer-ci.com/g/bazzline/php_component_command/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_command/) | [![build status](https://scrutinizer-ci.com/g/bazzline/php_component_command/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bazzline/php_component_command/)
 
-<!--
 The versioneye status is:
-@todo
-[![Dependency Status](https://www.versioneye.com/user/projects/54036dbbeab62ac615000143/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54036dbbeab62ac615000143)
+[![Dependency Status](https://www.versioneye.com/user/projects/548dee2a6e88f4ce4e0001ee/badge.svg?style=flat)](https://www.versioneye.com/user/projects/548dee2a6e88f4ce4e0001ee)
 
+<!--
 Take a look on [ohloh.net](https://www.ohloh.net/p/php_component_command).
 -->
 
