@@ -142,6 +142,7 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 
 * [1.0.4](https://github.com/bazzline/php_component_command/tree/1.0.4) - not yet released
     * implement linux/unix commands (not as example but as ready to use)
+    * implemented "validateSystemEnvironment" in example commands
 * [1.0.3](https://github.com/bazzline/php_component_command/tree/1.0.3) - released at 17-12-2014
     * implement "validateSystemEnvironment" (throws "InvalidSystemEnvironmentException")
 * [1.0.2](https://github.com/bazzline/php_component_command/tree/1.0.2) - released at 14-12-2014
