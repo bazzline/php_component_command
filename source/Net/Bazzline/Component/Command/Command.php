@@ -40,6 +40,11 @@ class Command
     }
 
     /**
+     * @throws InvalidSystemEnvironmentException
+     */
+    public function validateSystemEnvironment() {}
+
+    /**
      * @param int $return
      * @param string $command
      * @throws RuntimeException
