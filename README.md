@@ -63,11 +63,31 @@ class Zip extends Command
 
         return $this->execute($command);
     }
+
+    /**
+     * @throws InvalidSystemEnvironmentException
+     */
+    public function validateSystemEnvironment()
+    {
+        if (!is_executable('/usr/bin/zip')) {
+            throw new InvalidSystemEnvironmentException(
+                '/usr/bin/zip is mandatory'
+            );
+        }
+
+        if (!is_executable('/usr/bin/unzip')) {
+            throw new InvalidSystemEnvironmentException(
+                '/usr/bin/unzip is mandatory'
+            );
+        }
+    }
 }
 
 $zip = new Zip();
 
 $pathToZipArchive = '/tmp/my.zip';
+
+$zip->validateSystemEnvironment();
 
 echo 'list archive content' . PHP_EOL;
 $lines = $zip->listContent($pathToZipArchive);
@@ -122,7 +142,7 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 
 * [1.0.4](https://github.com/bazzline/php_component_command/tree/1.0.4) - not yet released
     * implement linux/unix commands (not as example but as ready to use)
-* [1.0.3](https://github.com/bazzline/php_component_command/tree/1.0.3) - not yet released
+* [1.0.3](https://github.com/bazzline/php_component_command/tree/1.0.3) - released at 17-12-2014
     * implement "validateSystemEnvironment" (throws "InvalidSystemEnvironmentException")
 * [1.0.2](https://github.com/bazzline/php_component_command/tree/1.0.2) - released at 14-12-2014
     * removed @todos
