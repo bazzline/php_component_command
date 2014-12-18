@@ -24,17 +24,21 @@ class Command
 
     /**
      * @param string $command
+     * @param boolean $validateReturnValue
      * @return array
      * @throws RuntimeException
      * @todo add callback as parameter
      */
-    public function execute($command)
+    public function execute($command, $validateReturnValue = true)
     {
         $lines = array();
         $return = null;
 
         exec($command, $lines, $return);
-        $this->validateExecuteReturn($return, $command);
+
+        if ($validateReturnValue) {
+            $this->validateExecuteReturn($return, $command);
+        }
 
         return $lines;
     }
