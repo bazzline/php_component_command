@@ -56,11 +56,18 @@ class CommandTest extends PHPUnit_Framework_TestCase
     {
         $class = $this->getNewCommand();
         $command = 'php ' . __DIR__ . '/../../../../../resources/failing_command.php';
-        $expectedLines = array(date('Y-m-d'));
 
-        $lines = $class->execute($command);
+        $class->execute($command);
+    }
 
-        $this->assertEquals($expectedLines, $lines);
+    public function testFailingCommandWithDisabledValidationOfReturnValue()
+    {
+        $class = $this->getNewCommand();
+        $command = 'php ' . __DIR__ . '/../../../../../resources/failing_command.php';
+
+        $lines= $class->execute($command, false);
+
+        $this->assertEquals(array(), $lines);
     }
     //end of test
 
