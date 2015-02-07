@@ -140,12 +140,14 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 
 # History
 
+* upcomming
 * [1.0.5](https://github.com/bazzline/php_component_command/tree/1.0.5) - not yet released
     * covered "$validateReturnValue" with a unit test
     * implement linux/unix commands (not as example but as ready to use)
     * implemented "validateSystemEnvironment" in example commands
     * implemented usage of "$validateReturnValue" in example commands
     * added "passthru" as public method
+    * updated dependencies
 * [1.0.4](https://github.com/bazzline/php_component_command/tree/1.0.4) - released at 18-12-2014
     * implemented optional parameter "$validateReturnValue" in method "Command::execute()"
 * [1.0.3](https://github.com/bazzline/php_component_command/tree/1.0.3) - released at 17-12-2014

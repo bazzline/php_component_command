@@ -2,11 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="generator" content="ApiGen 2.8.0">
 
 	<title>Class Net\Bazzline\Component\Command\Command | Command by Bazzline</title>
 
-	<link rel="stylesheet" href="resources/style.css?3901564645">
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
 </head>
 
@@ -17,19 +16,32 @@
 
 
 		<div id="groups">
-			<h3>Namespaces</h3>
+				<h3>Namespaces</h3>
 			<ul>
-				<li class="active"><a href="namespace-Net.html">Net<span></span></a>
+				<li class="active">
+					<a href="namespace-Net.html">
+						Net<span></span>
+					</a>
+
 						<ul>
-				<li class="active"><a href="namespace-Net.Bazzline.html">Bazzline<span></span></a>
+				<li class="active">
+					<a href="namespace-Net.Bazzline.html">
+						Bazzline<span></span>
+					</a>
+
 						<ul>
-				<li class="active"><a href="namespace-Net.Bazzline.Component.html">Component<span></span></a>
+				<li class="active">
+					<a href="namespace-Net.Bazzline.Component.html">
+						Component<span></span>
+					</a>
+
 						<ul>
-				<li class="active"><a href="namespace-Net.Bazzline.Component.Command.html">Command</a>
+				<li class="active">
+					<a href="namespace-Net.Bazzline.Component.Command.html">
+						Command					</a>
+
 						</li>
 							</ul></li></ul></li></ul></li>
-				<li><a href="namespace-PHP.html">PHP</a>
-						</li>
 			</ul>
 		</div>
 
@@ -42,12 +54,13 @@
 				<li class="active"><a href="class-Net.Bazzline.Component.Command.Command.html">Command</a></li>
 			</ul>
 
-
-
-			<h3>Exceptions</h3>
+			<h3>Interfaces</h3>
 			<ul>
+				<li><a href="class-Net.Bazzline.Component.Command.InvalidSystemEnvironmentException.html">InvalidSystemEnvironmentException</a></li>
 				<li><a href="class-Net.Bazzline.Component.Command.RuntimeException.html">RuntimeException</a></li>
 			</ul>
+
+
 
 
 		</div>
@@ -61,8 +74,7 @@
 	<form id="search">
 		<input type="hidden" name="cx" value="">
 		<input type="hidden" name="ie" value="UTF-8">
-		<input type="text" name="q" class="text">
-		<input type="submit" value="Search">
+		<input type="text" name="q" class="text" placeholder="Search">
 	</form>
 
 	<div id="navigation">
@@ -77,9 +89,6 @@
 <span>Class</span>			</li>
 		</ul>
 		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
 		</ul>
 		<ul>
 		</ul>
@@ -90,9 +99,7 @@
 
 
 	<div class="description">
-	
-<p>Class Command</p>
-
+	<p>Class Command</p>
 	</div>
 
 
@@ -109,7 +116,8 @@
 		<b>Namespace:</b> <a href="namespace-Net.html">Net</a>\<a href="namespace-Net.Bazzline.html">Bazzline</a>\<a href="namespace-Net.Bazzline.Component.html">Component</a>\<a href="namespace-Net.Bazzline.Component.Command.html">Command</a><br>
 		<b>Package:</b> Net\Bazzline\Component\Command<br>
 
-		<b>Located at</b> <a href="source-class-Net.Bazzline.Component.Command.Command.html#9-56" title="Go to source code">Command.php</a><br>
+			<b>Located at</b> <a href="source-class-Net.Bazzline.Component.Command.Command.html#9-65" title="Go to source code">Command.php</a>
+		<br>
 	</div>
 
 
@@ -120,6 +128,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			array
 			
 			</code>
@@ -145,12 +154,12 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>array</code><br>array<br>
+					array
 				</div>
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><code><a href="class-Net.Bazzline.Component.Command.RuntimeException.html">Net\Bazzline\Component\Command\RuntimeException</a></code></code><br>RuntimeException<br>
+					<code><a href="class-Net.Bazzline.Component.Command.RuntimeException.html">Net\Bazzline\Component\Command\RuntimeException</a></code>
 				</div>
 
 
@@ -162,6 +171,7 @@
 
 		<td class="attributes"><code>
 			 public 
+
 			array
 			
 			</code>
@@ -169,7 +179,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_execute">#</a>
-		<code><a href="source-class-Net.Bazzline.Component.Command.Command.html#25-40" title="Go to source code">execute</a>( <span>string <var>$command</var></span> )</code>
+		<code><a href="source-class-Net.Bazzline.Component.Command.Command.html#25-44" title="Go to source code">execute</a>( <span>string <var>$command</var></span>, <span>boolean <var>$validateReturnValue</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			
@@ -183,16 +193,52 @@
 				<div class="list"><dl>
 					<dt><var>$command</var></dt>
 					<dd></dd>
+					<dt><var>$validateReturnValue</var></dt>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code>array</code><br>array<br>
+					array
 				</div>
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><code><a href="class-Net.Bazzline.Component.Command.RuntimeException.html">Net\Bazzline\Component\Command\RuntimeException</a></code></code><br>RuntimeException<br>
+					<code><a href="class-Net.Bazzline.Component.Command.RuntimeException.html">Net\Bazzline\Component\Command\RuntimeException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validateSystemEnvironment" id="_validateSystemEnvironment">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validateSystemEnvironment">#</a>
+		<code><a href="source-class-Net.Bazzline.Component.Command.Command.html#46-49" title="Go to source code">validateSystemEnvironment</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Net.Bazzline.Component.Command.InvalidSystemEnvironmentException.html">Net\Bazzline\Component\Command\InvalidSystemEnvironmentException</a></code>
 				</div>
 
 
@@ -222,11 +268,11 @@
 </div>
 
 	<div id="footer">
-		Command by Bazzline API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+		Command by Bazzline API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?3779905554"></script>
-<script src="elementlist.js?683109933"></script>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
 </body>
 </html>
