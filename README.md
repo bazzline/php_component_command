@@ -133,6 +133,14 @@ There are also more [examples](https://github.com/bazzline/php_component_command
 * implement some stuff from [system process](https://github.com/jakobwesthoff/systemProcess) with a general approach in mind
 * get inspired by [ShellCommand](https://github.com/apinstein/ShellCommand/blob/master/src/ShellCommand/ShellCommand.php)
 * implement input validation
+* implement commands for unix and windows like
+```php
+if (PHP_OS === 'Windows') {
+    exec("rd /s /q {$path}");
+} else {
+    exec("rm -rf {$path}");
+}
+```
 
 # API
 
