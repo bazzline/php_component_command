@@ -1,6 +1,6 @@
 {
-    "description": "php component command is a thin and generic wrapper to easy up using system (shell) command usage",
-    "keywords": ["php", "command", "system command", "component", "shell", "job", "wrapper"],
+    "description": "free as in freedom php component command is a thin and generic wrapper to easy up using system (shell) command usage",
+    "keywords": ["php", "command", "system command", "component", "shell", "job", "wrapper", "lgpl", "free as in freedom"],
     "license": "LGPLv3",
     "name": "net_bazzline/php_component_command",
     "type": "library",
