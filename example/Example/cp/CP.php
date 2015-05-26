@@ -15,6 +15,11 @@ use Net\Bazzline\Component\Command\RuntimeException;
  */
 class CP extends Command
 {
+    public function __invoke($source, $destination)
+    {
+        return $this->cp($source, $destination);
+    }
+
     /**
      * @param string $source
      * @param string $destination

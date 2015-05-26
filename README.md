@@ -24,6 +24,17 @@ class Zip extends Command
      * @param array $items
      * @return array
      * @throws RuntimeException
+     */
+    public function __invoke($archiveName, array $items)
+    { 
+        return $this->zip($archiveName, $items);
+    }
+
+    /** 
+     * @param string $archiveName
+     * @param array $items
+     * @return array
+     * @throws RuntimeException
      * @todo implement parameter validation
      */
     public function zip($archiveName, array $items)
@@ -99,6 +110,8 @@ echo 'unzip archive' . PHP_EOL;
 $zip->unzip($pathToZipArchive, '/tmp/my_directory');
 
 echo 'zip directory' . PHP_EOL;
+//also valid call since we implemented __invoke
+//$zip($pathToZipArchive, array('/tmp/my_directory'));
 $zip->zip($pathToZipArchive, array('/tmp/my_directory'));
 ```
 
@@ -150,6 +163,8 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 
 * upcomming
     * move documentation to code.bazzline.net
+    * move examples into [command collection](https://github.com/bazzline/php_component_command_collection)
+* [1.0.7](https://github.com/bazzline/php_component_command/tree/1.0.7) - released at 26.05.2015
     * implement __invoke() to use a command as a function
 * [1.0.6](https://github.com/bazzline/php_component_command/tree/1.0.6) - released at 08.02.2015
     * removed dependency to apigen

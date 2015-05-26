@@ -14,12 +14,13 @@ class Command
 {
     /**
      * @param string $command
+     * @param boolean $validateReturnValue
      * @return array
      * @throws RuntimeException
      */
-    public function __invoke($command)
+    public function __invoke($command, $validateReturnValue = true)
     {
-        return $this->execute($command);
+        return $this->execute($command, $validateReturnValue);
     }
 
     /**
@@ -31,7 +32,7 @@ class Command
      */
     public function execute($command, $validateReturnValue = true)
     {
-        $lines = array();
+        $lines  = array();
         $return = null;
 
         exec($command, $lines, $return);
