@@ -149,6 +149,7 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 # History
 
 * upcomming
+    * implement __invoke() to use a command as a function
 * [1.0.6](https://github.com/bazzline/php_component_command/tree/1.0.6) - released at 08.02.2015
     * removed dependency to apigen
 * [1.0.5](https://github.com/bazzline/php_component_command/tree/1.0.5) - released at 08.02.2015
