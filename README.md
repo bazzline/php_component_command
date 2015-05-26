@@ -164,6 +164,20 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 * upcomming
     * move documentation to code.bazzline.net
     * move examples into [command collection](https://github.com/bazzline/php_component_command_collection)
+    * implement validateSystemEnvironment() and usage in "this->execute"
+```php
+    /**
+     * @throws InvalidSystemEnvironmentException
+     */
+    protected function validateSystemEnvironment($pathToTheCommand)
+    {
+        if (!is_executable('/usr/bin/rm')) {
+            throw new InvalidSystemEnvironmentException(
+                '/usr/bin/rm is mandatory'
+            );
+        }
+    }
+```
 * [1.0.7](https://github.com/bazzline/php_component_command/tree/1.0.7) - released at 26.05.2015
     * implement __invoke() to use a command as a function
 * [1.0.6](https://github.com/bazzline/php_component_command/tree/1.0.6) - released at 08.02.2015
