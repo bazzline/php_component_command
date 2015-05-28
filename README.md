@@ -162,6 +162,7 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 # History
 
 * upcomming
+    * updated dependencies
     * move documentation to code.bazzline.net
     * move examples into [command collection](https://github.com/bazzline/php_component_command_collection)
     * implement validateSystemEnvironment() and usage in "this->execute"
