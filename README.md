@@ -179,6 +179,9 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
         }
     }
 ```
+
+* [1.0.8](https://github.com/bazzline/php_component_command/tree/1.0.8) - released at 29.06.2015
+    * updated dependencies
 * [1.0.7](https://github.com/bazzline/php_component_command/tree/1.0.7) - released at 26.05.2015
     * implement __invoke() to use a command as a function
 * [1.0.6](https://github.com/bazzline/php_component_command/tree/1.0.6) - released at 08.02.2015
