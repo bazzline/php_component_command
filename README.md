@@ -180,6 +180,8 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
     }
 ```
 
+* [1.0.11](https://github.com/bazzline/php_component_command/tree/1.0.11) - released at 23.08.2015
+    * updated dependencies
 * [1.0.10](https://github.com/bazzline/php_component_command/tree/1.0.10) - released at 30.07.2015
     * updated dependencies
 * [1.0.9](https://github.com/bazzline/php_component_command/tree/1.0.9) - released at 04.07.2015
