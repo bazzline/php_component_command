@@ -141,19 +141,6 @@ There are also more [examples](https://github.com/bazzline/php_component_command
 * return value validation by using exceptions
 * hopefully the thinnest possible layer between system commands
 
-# Optimization Potential
-
-* implement some stuff from [system process](https://github.com/jakobwesthoff/systemProcess) with a general approach in mind
-* get inspired by [ShellCommand](https://github.com/apinstein/ShellCommand/blob/master/src/ShellCommand/ShellCommand.php)
-* implement input validation
-* implement commands for unix and windows like
-```php
-if (PHP_OS === 'Windows') {
-    exec("rd /s /q {$path}");
-} else {
-    exec("rm -rf {$path}");
-}
-```
 
 # API
 
@@ -162,6 +149,17 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 # History
 
 * upcomming
+    * implement some stuff from [system process](https://github.com/jakobwesthoff/systemProcess) with a general approach in mind
+    * get inspired by [ShellCommand](https://github.com/apinstein/ShellCommand/blob/master/src/ShellCommand/ShellCommand.php)
+    * implement input validation
+    * implement commands for unix and windows like
+    ```php
+    if (PHP_OS === 'Windows') {
+        exec("rd /s /q {$path}");
+    } else {
+        exec("rm -rf {$path}");
+    }
+    ```
     * updated dependencies
     * move documentation to code.bazzline.net
     * move examples into [command collection](https://github.com/bazzline/php_component_command_collection)
@@ -180,6 +178,8 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
     }
 ```
 
+* [1.1.0](https://github.com/bazzline/php_component_command/tree/1.1.0) - released at 18.09.2015
+    * extracted main code to *AbstractCommand* and extended *Command* from this
 * [1.0.11](https://github.com/bazzline/php_component_command/tree/1.0.11) - released at 23.08.2015
     * updated dependencies
 * [1.0.10](https://github.com/bazzline/php_component_command/tree/1.0.10) - released at 30.07.2015
