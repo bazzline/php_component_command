@@ -178,6 +178,8 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
     }
 ```
 
+* [1.2.1](https://github.com/bazzline/php_component_command/tree/1.2.1) - released at 08.11.2015
+    * updated dependency
 * [1.2.0](https://github.com/bazzline/php_component_command/tree/1.2.0) - released at 18.09.2015
     * extracted main code to *AbstractCommand* and extended *Command* from this
 * [1.1.0](https://github.com/bazzline/php_component_command/tree/1.1.0) - released at 13.09.2015
