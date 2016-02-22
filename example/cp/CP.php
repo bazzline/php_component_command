@@ -6,14 +6,14 @@
 
 namespace Example\cp;
 
-use Net\Bazzline\Component\Command\Command;
+use Net\Bazzline\Component\Command\AbstractCommand;
 use Net\Bazzline\Component\Command\RuntimeException;
 
 /**
  * Class CP
  * @package Example\cp
  */
-class CP extends Command
+class CP extends AbstractCommand
 {
     public function __invoke($source, $destination)
     {

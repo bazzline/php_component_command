@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 /**
  * @author stev leibelt <artodeto@bazzline.net>
@@ -11,12 +12,12 @@ if ($isWindows) {
         'this example needs to be run in an unix environment'
     );
 }
-require_once __DIR__ . '/../../../vendor/autoload.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
-$command = new \Example\ls\LS();
-$path = realpath(__DIR__ . '/../');
+$command = new \Example\rm\RM();
+$path = __DIR__ . '/foo';
 
-$lines = $command->ls($path);
+$lines = $command->rm($path);
 
 foreach ($lines as $line) {
     echo $line . PHP_EOL;

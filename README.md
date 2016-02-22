@@ -178,6 +178,11 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
     }
 ```
 
+* [1.2.2](https://github.com/bazzline/php_component_command/tree/1.2.2) - released at 22.02.2016
+    * added integration test for php 7.0
+    * moved to psr-4 autoloading
+    * removed integration test for php 5.3.3
+    * updated dependency
 * [1.2.1](https://github.com/bazzline/php_component_command/tree/1.2.1) - released at 11.12.2015
     * updated dependency
 * [1.2.0](https://github.com/bazzline/php_component_command/tree/1.2.0) - released at 18.09.2015

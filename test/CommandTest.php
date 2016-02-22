@@ -140,7 +140,7 @@ class CommandTest extends PHPUnit_Framework_TestCase
      */
     private function getFailingCommandCall()
     {
-        return 'php ' . __DIR__ . '/../../../../../resources/failing_command.php';
+        return 'php ' . __DIR__ . '/resources/failing_command.php';
     }
 
     /**
@@ -148,7 +148,7 @@ class CommandTest extends PHPUnit_Framework_TestCase
      */
     private function getNotFailingCommandCall()
     {
-        return 'php ' . __DIR__ . '/../../../../../resources/running_command.php';
+        return 'php ' . __DIR__ . '/resources/running_command.php';
     }
     //end of helper
 }
