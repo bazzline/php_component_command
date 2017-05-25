@@ -5,6 +5,8 @@
         "psr",
         "psr-4",
         "php", 
+        "php56", 
+        "php7", 
         "command", 
         "system command", 
         "component", 
