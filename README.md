@@ -149,35 +149,36 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
 # History
 
 * upcomming
-    * implement some stuff from [system process](https://github.com/jakobwesthoff/systemProcess) with a general approach in mind
-    * get inspired by [ShellCommand](https://github.com/apinstein/ShellCommand/blob/master/src/ShellCommand/ShellCommand.php)
-    * implement input validation
-    * implement commands for unix and windows like
-    ```php
-    if (PHP_OS === 'Windows') {
-        exec("rd /s /q {$path}");
-    } else {
-        exec("rm -rf {$path}");
-    }
-    ```
-    * updated dependencies
-    * move documentation to code.bazzline.net
-    * move examples into [command collection](https://github.com/bazzline/php_component_command_collection)
-    * implement validateSystemEnvironment() and usage in "this->execute"
-```php
-    /**
-     * @throws InvalidSystemEnvironmentException
-     */
-    protected function validateSystemEnvironment($pathToTheCommand)
-    {
-        if (!is_executable('/usr/bin/rm')) {
-            throw new InvalidSystemEnvironmentException(
-                '/usr/bin/rm is mandatory'
-            );
+    * @todo
+        * implement some stuff from [system process](https://github.com/jakobwesthoff/systemProcess) with a general approach in mind
+        * get inspired by [ShellCommand](https://github.com/apinstein/ShellCommand/blob/master/src/ShellCommand/ShellCommand.php)
+        * implement input validation
+        * implement commands for unix and windows like
+        ```php
+        if (PHP_OS === 'Windows') {
+            exec("rd /s /q {$path}");
+        } else {
+            exec("rm -rf {$path}");
         }
-    }
-```
-
+        ```
+        * updated dependencies
+        * move documentation to code.bazzline.net
+        * move examples into [command collection](https://github.com/bazzline/php_component_command_collection)
+        * implement validateSystemEnvironment() and usage in "this->execute"
+        ```php
+        /**
+         * @throws InvalidSystemEnvironmentException
+         */
+        protected function validateSystemEnvironment($pathToTheCommand)
+        {
+            if (!is_executable('/usr/bin/rm')) {
+                throw new InvalidSystemEnvironmentException(
+                    '/usr/bin/rm is mandatory'
+                );
+            }
+        }
+        ```
+    * replaced deprecated >>array()<< syntax with >>[]<<
 * [1.2.2](https://github.com/bazzline/php_component_command/tree/1.2.2) - released at 22.02.2016
     * added integration test for php 7.0
     * moved to psr-4 autoloading

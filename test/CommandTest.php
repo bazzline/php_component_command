@@ -52,7 +52,9 @@ class CommandTest extends PHPUnit_Framework_TestCase
     {
         $class          = $this->getNewCommand();
         $command        = $this->getNotFailingCommandCall();
-        $expectedLines  = array(date('Y-m-d'));
+        $expectedLines  = [
+            date('Y-m-d')
+        ];
 
         $lines = $class->execute($command);
 
@@ -66,7 +68,9 @@ class CommandTest extends PHPUnit_Framework_TestCase
     {
         $class          = $this->getNewCommand();
         $command        = $this->getNotFailingCommandCall();
-        $expectedLines  = array(date('Y-m-d'));
+        $expectedLines  = [
+            date('Y-m-d')
+        ];
 
         $lines = $class($command);
 
@@ -109,7 +113,7 @@ class CommandTest extends PHPUnit_Framework_TestCase
 
         $lines= $class->execute($command, false);
 
-        $this->assertEquals(array(), $lines);
+        $this->assertEquals([], $lines);
     }
 
     /**
@@ -122,7 +126,7 @@ class CommandTest extends PHPUnit_Framework_TestCase
 
         $lines= $class($command, false);
 
-        $this->assertEquals(array(), $lines);
+        $this->assertEquals([], $lines);
     }
     //end of test
 

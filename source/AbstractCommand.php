@@ -22,9 +22,11 @@ abstract class AbstractCommand
      */
     public function execute($command, $validateReturnValue = true)
     {
-        $lines  = array();
+        $lines  = [];
         $return = null;
+
         exec($command, $lines, $return);
+
         if ($validateReturnValue) {
             $this->validateExecuteReturn($return, $command, $lines);
         }
