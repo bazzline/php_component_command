@@ -14,7 +14,9 @@ The versioneye status is:
 
 Take a look on [openhub.net](https://www.openhub.net/p/php_component_command).
 
-# Usage / [examples](https://github.com/bazzline/php_component_command/tree/master/example/Example)
+# Usage
+
+This component is also shipped with a lot of [examples](https://github.com/bazzline/php_component_command/tree/master/example/Example).
 
 ```php
 class Zip extends Command
@@ -127,13 +129,17 @@ There are also more [examples](https://github.com/bazzline/php_component_command
 
 ## By Hand
 
-    mkdir -p vendor/net_bazzline/php_component_command
-    cd vendor/net_bazzline/php_component_command
-    git clone https://github.com/bazzline/php_component_command .
+```
+mkdir -p vendor/net_bazzline/php_component_command
+cd vendor/net_bazzline/php_component_command
+git clone https://github.com/bazzline/php_component_command .
+```
 
-## With [Packagist](https://packagist.org/packages/net_bazzline/php_component_command)
+## With Composer
 
-    composer require net_bazzline/php_component_command:dev-master
+```
+composer require net_bazzline/php_component_command:dev-master
+```
 
 # Benefits
 
@@ -144,7 +150,7 @@ There are also more [examples](https://github.com/bazzline/php_component_command
 
 # API
 
-Thanks to [apigen](https://github.com/apigen/apigen), the api is available in the [document](https://github.com/bazzline/php_component_command/blob/master/document/index.html) section or [online](http://code.bazzline.net/).
+[API](http://www.bazzline.net/deaff6d0a8004d2fe870434f0eda12b170111295/index.html) is available at [bazzline.net](http://www.bazzline.net).
 
 # History
 
@@ -222,3 +228,7 @@ Thanks to [apigen](https://github.com/apigen/apigen), the api is available in th
     * add usage / example in readme
 * [1.0.0](https://github.com/bazzline/php_component_command/tree/1.0.0) - released at 11.12.2014
     * initial release
+
+# Final Words
+
+Star it if you like it :-). Add issues if you need it. Pull patches if you enjoy it. Write a blog entry if you use it :-D.
