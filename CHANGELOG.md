@@ -45,10 +45,12 @@ protected function validateSystemEnvironment($pathToTheCommand)
 
 ### Changed
 
+* dropped official support for php version below 5.6
 * moved documentation to code.bazzline.net
+* moved history into changelog file
 * replaced deprecated >>array()<< syntax with >>[]<<
 
-## [1.2.2](https://github.com/bazzline/php_component_command/tree/1.2.2) - released at 22.02.2016
+## [1.2.2](https://github.com/bazzline/php_component_command/tree/1.2.2) - released at 2016-02-22
 
 ### Added
 
@@ -60,19 +62,19 @@ protected function validateSystemEnvironment($pathToTheCommand)
 * removed integration test for php 5.3.3
 * updated dependency
 
-## [1.2.1](https://github.com/bazzline/php_component_command/tree/1.2.1) - released at 11.12.2015
+## [1.2.1](https://github.com/bazzline/php_component_command/tree/1.2.1) - released at 2015-12-11
 
 ### Changed
 
 * updated dependency
 
-## [1.2.0](https://github.com/bazzline/php_component_command/tree/1.2.0) - released at 18.09.2015
+## [1.2.0](https://github.com/bazzline/php_component_command/tree/1.2.0) - released at 2015-09-18
 
 ### Changed
 
 * extracted main code to *AbstractCommand* and extended *Command* from this
 
-## [1.1.0](https://github.com/bazzline/php_component_command/tree/1.1.0) - released at 13.09.2015
+## [1.1.0](https://github.com/bazzline/php_component_command/tree/1.1.0) - released at 2015-09-13
 
 ### Added
 
@@ -84,37 +86,37 @@ protected function validateSystemEnvironment($pathToTheCommand)
 
 * updated dependencies
 
-## [1.0.10](https://github.com/bazzline/php_component_command/tree/1.0.10) - released at 30.07.2015
+## [1.0.10](https://github.com/bazzline/php_component_command/tree/1.0.10) - released at 2015-07-30
 
 ### Changed
 
 * updated dependencies
 
-## [1.0.9](https://github.com/bazzline/php_component_command/tree/1.0.9) - released at 04.07.2015
+## [1.0.9](https://github.com/bazzline/php_component_command/tree/1.0.9) - released at 2015-07-04
 
 ### Changed
 
 * updated dependencies
 
-## [1.0.8](https://github.com/bazzline/php_component_command/tree/1.0.8) - released at 29.06.2015
+## [1.0.8](https://github.com/bazzline/php_component_command/tree/1.0.8) - released at 2015-06-29
 
 ### Changed
 
 * updated dependencies
 
-## [1.0.7](https://github.com/bazzline/php_component_command/tree/1.0.7) - released at 26.05.2015
+## [1.0.7](https://github.com/bazzline/php_component_command/tree/1.0.7) - released at 2015-05-26
 
 ### Changed
 
 * implement __invoke() to use a command as a callable
 
-## [1.0.6](https://github.com/bazzline/php_component_command/tree/1.0.6) - released at 08.02.2015
+## [1.0.6](https://github.com/bazzline/php_component_command/tree/1.0.6) - released at 2015-02-08
 
 ### Changed
 
 * removed dependency to apigen
 
-## [1.0.5](https://github.com/bazzline/php_component_command/tree/1.0.5) - released at 08.02.2015
+## [1.0.5](https://github.com/bazzline/php_component_command/tree/1.0.5) - released at 2015-02-08
 
 ### Added
 
@@ -128,19 +130,19 @@ protected function validateSystemEnvironment($pathToTheCommand)
 
 * updated dependencies
 
-## [1.0.4](https://github.com/bazzline/php_component_command/tree/1.0.4) - released at 18.12.2014
+## [1.0.4](https://github.com/bazzline/php_component_command/tree/1.0.4) - released at 2014-12-18
 
 ### Changed
 
 * implemented optional parameter "$validateReturnValue" in method "Command::execute()"
 
-## [1.0.3](https://github.com/bazzline/php_component_command/tree/1.0.3) - released at 17.12.2014
+## [1.0.3](https://github.com/bazzline/php_component_command/tree/1.0.3) - released at 2014-12-17
 
 ### Changed
 
 * implement "validateSystemEnvironment" (throws "InvalidSystemEnvironmentException")
 
-## [1.0.2](https://github.com/bazzline/php_component_command/tree/1.0.2) - released at 14.12.2014
+## [1.0.2](https://github.com/bazzline/php_component_command/tree/1.0.2) - released at 2014-12-14
 
 ### Added
 
@@ -151,13 +153,13 @@ protected function validateSystemEnvironment($pathToTheCommand)
 
 * removed @todos
 
-## [1.0.1](https://github.com/bazzline/php_component_command/tree/1.0.1) - released at 12.12.2014
+## [1.0.1](https://github.com/bazzline/php_component_command/tree/1.0.1) - released at 2014-12-12
 
 ### Added
 
 * add unit tests
 * add usage / example in readme
 
-## [1.0.0](https://github.com/bazzline/php_component_command/tree/1.0.0) - released at 11.12.2014
+## [1.0.0](https://github.com/bazzline/php_component_command/tree/1.0.0) - released at 2014-12-11
 
 * initial release
