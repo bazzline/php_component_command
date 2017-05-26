@@ -20,8 +20,6 @@ if (PHP_OS === 'Windows') {
     exec("rm -rf {$path}");
 }
 ```
-* updated dependencies
-* move examples into [command collection](https://github.com/bazzline/php_component_command_collection)
 * implement validateSystemEnvironment() and usage in "this->execute"
 ```php
 /**
@@ -39,7 +37,16 @@ protected function validateSystemEnvironment($pathToTheCommand)
 
 ### To Change
 
+* updated dependencies
+* move examples into [command collection](https://github.com/bazzline/php_component_command_collection)
+
 ## [Unreleased]
+
+### Added
+
+### Changed
+
+## [1.3.0](https://github.com/bazzline/php_component_command/tree/1.3.0) - released at 2017-05-26
 
 ### Added
 
