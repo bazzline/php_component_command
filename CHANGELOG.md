@@ -37,7 +37,6 @@ protected function validateSystemEnvironment($pathToTheCommand)
 
 ### To Change
 
-* updated dependencies
 * move examples into [command collection](https://github.com/bazzline/php_component_command_collection)
 
 ## [Unreleased]
