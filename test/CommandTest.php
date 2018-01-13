@@ -7,13 +7,13 @@
 namespace Test\Net\Bazzline\Component\Command;
 
 use Net\Bazzline\Component\Command\Command;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class CommandTest
  * @package Test\Net\Bazzline\Component\Command
  */
-class CommandTest extends PHPUnit_Framework_TestCase
+class CommandTest extends TestCase
 {
     //begin of test
     public function testEnvironment()
@@ -31,7 +31,14 @@ class CommandTest extends PHPUnit_Framework_TestCase
         $class      = $this->getNewCommand();
         $command    = $this->getNotFailingCommandCall();
 
-        $class->execute($command);
+        $listOfLine = $class->execute($command);
+
+        $this->assertEquals(
+            [
+                date('Y-m-d')
+            ],
+            $listOfLine
+        );
     }
 
     /**
@@ -42,7 +49,14 @@ class CommandTest extends PHPUnit_Framework_TestCase
         $class      = $this->getNewCommand();
         $command    = $this->getNotFailingCommandCall();
 
-        $class($command);
+        $listOfLine = $class($command);
+
+        $this->assertEquals(
+            [
+                date('Y-m-d')
+            ],
+            $listOfLine
+        );
     }
 
     /**

@@ -44,11 +44,13 @@ protected function validateSystemEnvironment($pathToTheCommand)
 
 ### Added
 
+## [2.0.0](https://github.com/bazzline/php_component_command/tree/2.0.0) - released at 2018-01-13
+
 ### Changed
 
-## [1.3.0](https://github.com/bazzline/php_component_command/tree/1.3.0) - released at 2017-05-26
+* dropped support for all PHP Versions below 7.0
 
-### Added
+## [1.3.0](https://github.com/bazzline/php_component_command/tree/1.3.0) - released at 2017-05-26
 
 ### Changed
 

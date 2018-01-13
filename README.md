@@ -149,7 +149,6 @@ composer require net_bazzline/php_component_command:dev-master
 * return value validation by using exceptions
 * hopefully the thinnest possible layer between system commands
 
-
 # API
 
 [API](http://www.bazzline.net/deaff6d0a8004d2fe870434f0eda12b170111295/index.html) is available at [bazzline.net](http://www.bazzline.net).
