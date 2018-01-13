@@ -35,16 +35,13 @@ protected function validateSystemEnvironment($pathToTheCommand)
 }
 ```
 
-### To Change
-
-* move examples into [command collection](https://github.com/bazzline/php_component_command_collection)
-
 ## [Unreleased]
 
 ### Added
 
 ### Changed
 
+* moved examples into [command collection](https://github.com/bazzline/php_component_command_collection)
 * removed not needed develop dependency of mockery
 
 ## [2.0.0](https://github.com/bazzline/php_component_command/tree/2.0.0) - released at 2018-01-13

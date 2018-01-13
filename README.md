@@ -18,7 +18,7 @@ The current change log can be found [here](https://github.com/bazzline/php_compo
 
 # Usage
 
-This component is also shipped with a lot of [examples](https://github.com/bazzline/php_component_command/tree/master/example/Example).
+You can find a lot of examples [here](https://github.com/bazzline/php_component_command_collection/tree/master/example).
 
 ```php
 class Zip extends Command
@@ -118,14 +118,6 @@ echo 'zip directory' . PHP_EOL;
 //$zip($pathToZipArchive, array('/tmp/my_directory'));
 $zip->zip($pathToZipArchive, array('/tmp/my_directory'));
 ```
-
-There are also more [examples](https://github.com/bazzline/php_component_command/tree/master/example/Example) shipped with this project.
-
-* [cp](https://github.com/bazzline/php_component_command/tree/master/example/Example/cp/)
-* [ls](https://github.com/bazzline/php_component_command/tree/master/example/Example/ls/)
-* [mv](https://github.com/bazzline/php_component_command/tree/master/example/Example/mv/)
-* [rm](https://github.com/bazzline/php_component_command/tree/master/example/Example/rm/)
-* [ps](https://github.com/bazzline/php_component_command/tree/master/example/Example/ps/)
 
 # Install
 
