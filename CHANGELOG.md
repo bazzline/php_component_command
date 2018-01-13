@@ -44,6 +44,10 @@ protected function validateSystemEnvironment($pathToTheCommand)
 
 ### Added
 
+### Changed
+
+* removed not needed develop dependency of mockery
+
 ## [2.0.0](https://github.com/bazzline/php_component_command/tree/2.0.0) - released at 2018-01-13
 
 ### Changed
