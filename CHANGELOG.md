@@ -41,6 +41,7 @@ protected function validateSystemEnvironment($pathToTheCommand)
 
 ### Changed
 
+* fixed license issue in the composer.json
 * moved examples into [command collection](https://github.com/bazzline/php_component_command_collection)
 * removed not needed develop dependency of mockery
 
